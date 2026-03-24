@@ -1,0 +1,1 @@
+conda activate gym && CUDA_LAUNCH_BLOCKING=1 python legged_gym/scripts/play.py --task=melew3_flat --load_run "/home/mrp/gym/legged_gym/logs/flat_melew3/Sep22_21-04-59_climbing_rewards_v2" --checkpoint 600

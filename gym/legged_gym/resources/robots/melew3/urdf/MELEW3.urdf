@@ -1,0 +1,765 @@
+<?xml version="1.0" ?>
+<robot name="MELEW3">
+  <link name="BODY">
+    <inertial>
+      <mass value="6.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.08638450" ixy="0.0" ixz="0.0" iyy="0.13138450" iyz="0.0" izz="0.20500000"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/body.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/body.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_YAW_FL">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_ROLL_FL">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_PITCH_FL">
+    <inertial>
+      <mass value="4.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.09876543209"/>
+      <inertia ixx="0.06000329" ixy="0.0" ixz="0.0" iyy="0.06024268" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="KNEE_FL">
+    <inertial>
+      <mass value="1.05"/>
+      <origin rpy="-0 0 0" xyz="0 0 -0.095238095238"/>
+      <inertia ixx="0.01500082" ixy="0.0" ixz="0.0" iyy="0.01506067" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_YAW_FR">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_ROLL_FR">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_PITCH_FR">
+    <inertial>
+      <mass value="4.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.09876543209"/>
+      <inertia ixx="0.06000329" ixy="0.0" ixz="0.0" iyy="0.06024268" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="KNEE_FR">
+    <inertial>
+      <mass value="1.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.095238095238"/>
+      <inertia ixx="0.01500082" ixy="0.0" ixz="0.0" iyy="0.01506067" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_YAW_BL">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_ROLL_BL">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_PITCH_BL">
+    <inertial>
+      <mass value="4.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.09876543209"/>
+      <inertia ixx="0.06000329" ixy="0.0" ixz="0.0" iyy="0.06024268" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="KNEE_BL">
+    <inertial>
+      <mass value="1.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.095238095238"/>
+      <inertia ixx="0.01500082" ixy="0.0" ixz="0.0" iyy="0.01506067" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_YAW_BR">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_y.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_ROLL_BR">
+    <inertial>
+      <mass value="0.05"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/joint_r.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="HIP_PITCH_BR">
+    <inertial>
+      <mass value="4.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.09876543209"/>
+      <inertia ixx="0.06000329" ixy="0.0" ixz="0.0" iyy="0.06024268" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="KNEE_BR">
+    <inertial>
+      <mass value="1.05"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.095238095238"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/link_small.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="WHEEL_FL">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+      <material name="wheel_white">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+    <!-- 红色标记线 - 从中心到边缘，纯视觉无碰撞，宽度足够穿过轮子 -->
+    <!-- 已注释：不显示红色标记线
+    <visual>
+      <origin rpy="0 0 0" xyz="0.025 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.005"/>
+      </geometry>
+      <material name="red_marker">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    -->
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="WHEEL_FR">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+      <material name="wheel_white">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+    <!-- 红色标记线 - 从中心到边缘，纯视觉无碰撞，宽度足够穿过轮子 -->
+    <!-- 已注释：不显示红色标记线
+    <visual>
+      <origin rpy="0 0 0" xyz="0.025 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.005"/>
+      </geometry>
+      <material name="red_marker">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    -->
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="WHEEL_BL">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+      <material name="wheel_white">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+    <!-- 红色标记线 - 从中心到边缘，纯视觉无碰撞，宽度足够穿过轮子 -->
+    <!-- 已注释：不显示红色标记线
+    <visual>
+      <origin rpy="0 0 0" xyz="0.025 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.005"/>
+      </geometry>
+      <material name="red_marker">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    -->
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="WHEEL_BR">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+      <material name="wheel_white">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+    <!-- 红色标记线 - 从中心到边缘，纯视觉无碰撞，宽度足够穿过轮子 -->
+    <!-- 已注释：不显示红色标记线
+    <visual>
+      <origin rpy="0 0 0" xyz="0.025 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.005"/>
+      </geometry>
+      <material name="red_marker">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    -->
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="HIP_YAW_FL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.25 0.2 0.0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="BODY"/>
+    <child link="HIP_YAW_FL"/>
+    <limit effort="100.0" lower="-0.087266" upper="0.087266" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_ROLL_FL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <parent link="HIP_YAW_FL"/>
+    <child link="HIP_ROLL_FL"/>
+    <limit effort="100.0" lower="-0.174533" upper="0.174533" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_PITCH_FL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_ROLL_FL"/>
+    <child link="HIP_PITCH_FL"/>
+    <limit effort="100.0" lower="-1.309" upper="1.309" velocity="90.0"/>
+  </joint>
+  <joint name="KNEE_FL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_PITCH_FL"/>
+    <child link="KNEE_FL"/>
+    <limit effort="100.0" lower="-2.356" upper="-0.785" velocity="90.0"/>
+  </joint>
+  <joint name="WHEEL_FL" type="continuous">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="KNEE_FL"/>
+    <child link="WHEEL_FL"/>
+    <limit effort="500.0" velocity="100.0"/>
+    <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+  <joint name="HIP_YAW_FR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.25 -0.2 0.0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="BODY"/>
+    <child link="HIP_YAW_FR"/>
+    <limit effort="100.0" lower="-0.087266" upper="0.087266" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_ROLL_FR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <parent link="HIP_YAW_FR"/>
+    <child link="HIP_ROLL_FR"/>
+    <limit effort="100.0" lower="-0.174533" upper="0.174533" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_PITCH_FR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_ROLL_FR"/>
+    <child link="HIP_PITCH_FR"/>
+    <limit effort="100.0" lower="-1.309" upper="1.309" velocity="90.0"/>
+  </joint>
+  <joint name="KNEE_FR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_PITCH_FR"/>
+    <child link="KNEE_FR"/>
+    <limit effort="100.0" lower="-2.356" upper="-0.785" velocity="90.0"/>
+  </joint>
+  <joint name="WHEEL_FR" type="continuous">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="KNEE_FR"/>
+    <child link="WHEEL_FR"/>
+    <limit effort="500.0" velocity="100.0"/>
+    <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+  <joint name="HIP_YAW_BL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="-0.25 0.2 0.0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="BODY"/>
+    <child link="HIP_YAW_BL"/>
+    <limit effort="100.0" lower="-0.087266" upper="0.087266" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_ROLL_BL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <parent link="HIP_YAW_BL"/>
+    <child link="HIP_ROLL_BL"/>
+    <limit effort="100.0" lower="-0.174533" upper="0.174533" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_PITCH_BL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_ROLL_BL"/>
+    <child link="HIP_PITCH_BL"/>
+    <limit effort="100.0" lower="-1.309" upper="1.309" velocity="90.0"/>
+  </joint>
+  <joint name="KNEE_BL" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_PITCH_BL"/>
+    <child link="KNEE_BL"/>
+    <limit effort="100.0" lower="0.785" upper="2.356" velocity="90.0"/>
+  </joint>
+  <joint name="WHEEL_BL" type="continuous">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="KNEE_BL"/>
+    <child link="WHEEL_BL"/>
+    <limit effort="500.0" velocity="100.0"/>
+    <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+  <joint name="HIP_YAW_BR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="-0.25 -0.2 0.0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="BODY"/>
+    <child link="HIP_YAW_BR"/>
+    <limit effort="100.0" lower="-0.087266" upper="0.087266" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_ROLL_BR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <parent link="HIP_YAW_BR"/>
+    <child link="HIP_ROLL_BR"/>
+    <limit effort="100.0" lower="-0.174533" upper="0.174533" velocity="90.0"/>
+  </joint>
+  <joint name="HIP_PITCH_BR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_ROLL_BR"/>
+    <child link="HIP_PITCH_BR"/>
+    <limit effort="100.0" lower="-1.309" upper="1.309" velocity="90.0"/>
+  </joint>
+  <joint name="KNEE_BR" type="revolute">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="HIP_PITCH_BR"/>
+    <child link="KNEE_BR"/>
+    <limit effort="100.0" lower="0.785" upper="2.356" velocity="90.0"/>
+  </joint>
+  <joint name="WHEEL_BR" type="continuous">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.2"/>
+    <axis xyz="0 1 0"/>
+    <parent link="KNEE_BR"/>
+    <child link="WHEEL_BR"/>
+    <limit effort="500.0" velocity="100.0"/>
+    <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+  <transmission name="HIP_YAW_FL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_YAW_FL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_YAW_FL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_ROLL_FL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_ROLL_FL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_ROLL_FL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_PITCH_FL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_PITCH_FL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_PITCH_FL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="KNEE_FL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="KNEE_FL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="KNEE_FL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_YAW_FR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_YAW_FR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_YAW_FR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_ROLL_FR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_ROLL_FR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_ROLL_FR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_PITCH_FR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_PITCH_FR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_PITCH_FR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="KNEE_FR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="KNEE_FR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="KNEE_FR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_YAW_BL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_YAW_BL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_YAW_BL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_ROLL_BL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_ROLL_BL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_ROLL_BL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_PITCH_BL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_PITCH_BL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_PITCH_BL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="KNEE_BL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="KNEE_BL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="KNEE_BL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_YAW_BR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_YAW_BR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_YAW_BR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_ROLL_BR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_ROLL_BR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_ROLL_BR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="HIP_PITCH_BR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HIP_PITCH_BR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HIP_PITCH_BR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="KNEE_BR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="KNEE_BR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="KNEE_BR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="WHEEL_FL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="WHEEL_FL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="WHEEL_FL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="WHEEL_FR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="WHEEL_FR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="WHEEL_FR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="WHEEL_BL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="WHEEL_BL">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="WHEEL_BL_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="WHEEL_BR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="WHEEL_BR">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="WHEEL_BR_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+</robot>

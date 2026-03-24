@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="solid_crevice_terrain_80cm">
+  <link name="terrain_link">
+    <inertial>
+      <mass value="1000.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="1000.0" ixy="0.0" ixz="0.0" iyy="1000.0" iyz="0.0" izz="1000.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="solid_crevice_80cm.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="terrain_material">
+        <color rgba="0.6 0.4 0.2 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="solid_crevice_80cm.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

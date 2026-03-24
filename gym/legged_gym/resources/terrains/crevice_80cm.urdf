@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="crevice_terrain_80cm">
+  <link name="terrain_link">
+    <visual>
+      <geometry>
+        <mesh filename="crevice_80cm.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="crevice_80cm.obj" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
